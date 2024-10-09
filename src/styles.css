@@ -66,6 +66,9 @@ p {
     text-align: center;
     margin-bottom: 20px;
 }
+p:hover{
+    color: rgb(204, 204, 204);
+}
 
 .main {
     display: grid;
@@ -126,4 +129,100 @@ p {
     height: 415px;
     transition: ease-in-out .5s;
     border-radius: 19px;
+}
+
+.bigHermano{
+    object-fit:cover;
+    grid-column: 2/3;
+    grid-row: 2/3;
+    width: 300px;
+    height: 300px;
+    margin: 24px;
+    border-radius: 18px;
+}   
+.smallHermano{
+    object-fit:cover;
+    grid-column: 2/3;
+    grid-row: 2/3;
+    width: 300px;
+    height: 300px;
+    margin: 24px;
+    border-radius: 18px;
+}   
+.spicyHermano{
+    object-fit:cover;
+    grid-column: 2/3;
+    grid-row: 2/3;
+    width: 300px;
+    height: 300px;
+    margin: 24px;
+    border-radius: 18px;
+}   
+.eggyHermano{
+    object-fit:cover;
+    grid-column: 2/3;
+    grid-row: 2/3;
+    width: 300px;
+    height: 300px;
+    margin: 24px;
+    border-radius: 18px;
+}   
+.breakieHermano{
+    object-fit:cover;
+    grid-column: 2/3;
+    grid-row: 2/3;
+    width: 300px;
+    height: 300px;
+    margin: 24px;
+    border-radius: 18px;
+}   
+.juicyHermano{
+    object-fit:cover;
+    grid-column: 2/3;
+    grid-row: 2/3;
+    width: 300px;
+    height: 300px;
+    margin: 24px;
+    border-radius: 18px;
+    
+}   
+
+.desc{
+    font-size: 17px;
+    background-color: rgba(255, 255, 255, 0.062);
+}
+
+.juicyHermano:hover{
+    width: 305px;
+    height: 305px;
+    transition: ease-in-out .5s;
+    cursor: pointer;
+}
+.spicyHermano:hover{
+    width: 305px;
+    height: 305px;
+    cursor: pointer;
+    transition: ease-in-out .5s;
+}
+.smallHermano:hover{
+    width: 305px;
+    height: 305px;
+    transition: ease-in-out .5s;
+    cursor: pointer;
+}
+.bigHermano:hover{
+    width: 305px;
+    height: 305px;
+    transition: ease-in-out .5s;
+    cursor: pointer;
+}
+.eggyHermano:hover{
+    width: 305px;
+    height: 305px;
+    transition: ease-in-out .5s;
+    cursor: pointer;
+}
+
+.desc:hover{
+    color: rgb(204, 204, 204);
 }

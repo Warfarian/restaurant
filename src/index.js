@@ -9,6 +9,7 @@ let logo = document.createElement('img');
 
 let footer = document.createElement('footer');
 
+
 //tab switching 
 
 let homePage = document.getElementById('homePage');
@@ -74,10 +75,42 @@ function displayHome(){
 }
 
 
-
 function displayMenu(){
     content.innerHTML = '';
-    
+    footer.innerHTML = '';
+    function createItem(url,name){
+        let item = document.createElement('img');
+        item.src = url;
+        item.className = name;
+        content.appendChild(item);
+    }
+
+    function createItemDesc(desc){
+        let para = document.createElement('p');
+        para.innerText = desc;
+        para.className = 'desc';
+        content.appendChild(para);
+    }
+
+    createItem("https://s7d1.scene7.com/is/image/mcdonalds/DC_202302_0005-999_BigMac_1564x1564-1:nutrition-calculator-tile","bigHermano");
+    createItemDesc('The Big Hermano');
+    createItemDesc('The burger that runs the family! Our Big Hermano is a towering creation with two juicy beef patties, melted cheddar cheese, crispy bacon, lettuce, tomato, and our signature Los Pollos sauce, all tucked into a freshly toasted sesame bun. Big taste for big appetites!');
+    createItem("https://s7d1.scene7.com/is/image/mcdonalds/DC_202201_3426-005_DoubleQuarterPounderwithCheese_1564x1564-1:nutrition-calculator-tile","eggyHermano");
+    createItemDesc('The Eggy Hermano');
+    createItemDesc('Breakfast lovers, rejoice! The Eggy Hermano is the ultimate morning delight with a perfectly fried egg, crispy bacon, and a succulent sausage patty, topped with cheddar cheese and a maple aioli. Whether its breakfast or lunch, this burger hits the spot any time of day.');
+    createItem("https://s7d1.scene7.com/is/image/mcdonalds/DC_202302_0004-999_DoubleCheeseburger_Alt_1564x1564-1:nutrition-calculator-tile","smallHermano");
+    createItemDesc('The Small Hermano');
+    createItemDesc('Small in size, big in flavor! The Small Hermano may be bite-sized, but it’s loaded with a beef patty, sharp cheddar, fresh lettuce, and a dollop of creamy aioli. Perfect for those who like to snack or grab a light bite on the go.');
+    createItem("https://s7d1.scene7.com/is/image/mcdonalds/DC_202012_0370_DeluxeCrispyChicken_PotatoBun_1564x1564-1:nutrition-calculator-tile", "juicyHermano");
+    createItemDesc('The Juicy Hermano');
+    createItemDesc('Satisfy your cravings with the Juicy Hermano! Packed with flavor, this burger features a thick, juicy beef patty dripping with savory goodness, topped with caramelized onions, pickles, and a dash of our secret herb butter for that melt-in-your-mouth experience.');
+    createItem("https://s7d1.scene7.com/is/image/mcdonalds/DC_202012_0116_SpicyCrispyChicken_PotatoBun_1564x1564-1:nutrition-calculator-tile", "spicyHermano");
+    createItemDesc('The Spicy Hermano');
+    createItemDesc('Turn up the heat with the Spicy Hermano! This burger packs a punch with a spicy chili-infused beef patty, jalapeños, pepper jack cheese, and a smoky chipotle mayo. It’s not for the faint-hearted—only for those who like it fiery!');
+    createItem("https://s7d1.scene7.com/is/image/mcdonalds/DC_201908_9839_BEC_McGriddle_1564x1564-1:nutrition-calculator-tile", "breakieHermano");
+    createItemDesc('The Breakie Hermano');
+    createItemDesc('Why wait for the weekend? The Breakie Hermano gives you the best breakfast flavors in one burger—fluffy scrambled eggs, sausage, melted cheese, and a hash brown, all drizzled with a sweet maple syrup glaze. Start your day with a bite of heaven!');
+
 }
 
 
