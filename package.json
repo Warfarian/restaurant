@@ -1,0 +1,16 @@
+{
+  "name": "restaurant",
+  "version": "1.0.0",
+  "description": "Testing out webpacks",
+  "main": "index.js",
+  "scripts": {
+    "build": "webpack"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "webpack": "^5.95.0",
+    "webpack-cli": "^5.1.4"
+  }
+}
