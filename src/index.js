@@ -18,6 +18,10 @@ homePage.addEventListener('click', displayHome);
 let menuPage = document.getElementById('menuPage');
 menuPage.addEventListener('click', displayMenu);
 
+let contactPage = document.getElementById('contactPage');
+contactPage.addEventListener('click' , displayContact);
+
+
 function displayHome(){
 
     content.innerHTML = '';
@@ -113,5 +117,30 @@ function displayMenu(){
 
 }
 
+function displayContact(){
+    content.innerHTML = '';
+    footer.innerHTML = ''; 
+    let nameInput = document.createElement('input');
+    nameInput.type = "text";
+    nameInput.placeholder = "ex : Gus Fring";
+    nameInput.className = "nameInput" ;
+    main.appendChild(nameInput);
+    let mailInput = document.createElement('input');
+    mailInput.type = "email";
+    mailInput.placeholder = "ex : gusfring@gmail.com";
+    mailInput.className = "mailInput";
+    main.appendChild(mailInput);
+    let newSubmit = document.createElement('input');
+    newSubmit.type = "submit";
+    newSubmit.className = "submitBtn"
+    main.appendChild(newSubmit);
+    
+    function clearForm(){
+        mailInput.value = '';
+        nameInput.value = '';
+    }
 
+    newSubmit.addEventListener('click' , clearForm);
+     
+}
 window.onload(displayHome());
