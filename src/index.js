@@ -120,24 +120,37 @@ function displayMenu(){
 function displayContact(){
     content.innerHTML = '';
     footer.innerHTML = ''; 
+    let header = document.createElement('h4');
+    header.textContent = "Send us your thoughts on how to improve!"
+    header.classList = "contactHeader";
+    content.appendChild(header);  
     let nameInput = document.createElement('input');
     nameInput.type = "text";
-    nameInput.placeholder = "ex : Gus Fring";
+    nameInput.placeholder = "Enter name";
     nameInput.className = "nameInput" ;
-    main.appendChild(nameInput);
+    content.appendChild(nameInput);
     let mailInput = document.createElement('input');
     mailInput.type = "email";
-    mailInput.placeholder = "ex : gusfring@gmail.com";
+    mailInput.placeholder = "Enter email";
     mailInput.className = "mailInput";
-    main.appendChild(mailInput);
+    content.appendChild(mailInput);
+    let newCheck = document.createElement('input');
+    newCheck.type = "checkbox";
+    newCheck.className = "checkbox";
+    let checkboxLabel = document.createElement('label');
+    checkboxLabel.className = "checkboxLabel";
+    checkboxLabel.htmlFor = "checkbox";
+    checkboxLabel.textContent = "Do you want to receive our monthly newsletter?";
+    content.appendChild(newCheck);
+    content.appendChild(checkboxLabel);
     let newSubmit = document.createElement('input');
     newSubmit.type = "submit";
     newSubmit.className = "submitBtn"
-    main.appendChild(newSubmit);
-    
+    content.appendChild(newSubmit);
     function clearForm(){
         mailInput.value = '';
         nameInput.value = '';
+        newCheck.checked = false;
     }
 
     newSubmit.addEventListener('click' , clearForm);

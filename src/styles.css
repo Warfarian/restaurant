@@ -226,3 +226,61 @@ p:hover{
 .desc:hover{
     color: rgb(204, 204, 204);
 }
+
+.submitBtn{
+    display: flex;
+    margin-top: 80px;
+    padding: 5px;
+    width: 150px;
+    font-family: 'Protest Strike';
+    border-radius: 8px;
+}
+
+.mailInput{
+    display: flex;
+    border-radius: 8px;
+    padding: 15px;
+    width: 450px;
+    margin-top: 80px;
+}
+
+.nameInput{
+    display: flex;
+    margin-top: 160px;
+    border-radius: 8px;
+    width: 450px;
+    padding: 15px;
+}
+
+.nameInput::placeholder{
+    font-family: 'Protest Strike';
+}
+.mailInput::placeholder{
+    font-family: 'Protest Strike';
+}
+
+.nameInput:hover{
+    background-color: rgb(231, 231, 119);
+}
+
+.mailInput:hover{
+    background-color: rgb(231, 231, 119);
+}
+
+.submitBtn:hover{
+    background-color: rgb(231, 231, 119);
+}
+
+.contactHeader{
+    margin-top: 95px;
+    font-weight: 400;
+}
+
+.checkbox{
+    margin-top: 80px;
+    width: 25px auto;
+    height: 25px auto;
+    margin-right: 10px;
+}
+
+
