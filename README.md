@@ -1,4 +1,4 @@
 # restaurant
 Testing out webpacks
 
-Live: https://warfarian.github.io/restaurant
+[Live Demo](https://warfarian.github.io/restaurant)
